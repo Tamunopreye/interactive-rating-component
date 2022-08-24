@@ -2,8 +2,8 @@ const numberButtons = document.querySelectorAll(".btn");
 const active = document.querySelector(".active");
 const submitBtn = document.querySelector(".submit");
 const resultText = document.querySelector(".display-id");
-const resultCard = document.querySelector(".backNote");
-const questionCard = document.querySelector(".frontCard");
+const backNote = document.querySelector(".backNote");
+const frontCard = document.querySelector(".frontCard");
 
 // targetting the selected value
 numberButtons.forEach(button => {
@@ -19,7 +19,7 @@ numberButtons.forEach(button => {
 submitBtn.addEventListener("click", () => {
     const btnSelected = document.querySelector(".btn-selected");
     let selectedValue = btnSelected.textContent;
-    resultCard.classList.add("show-card");
-    questionCard.classList.add("hide-card");
+    backNote.classList.add("show-card");
+    frontCard.classList.add("hide-card");
     resultText.textContent = `You selected ${selectedValue} out of 5`;
 });
