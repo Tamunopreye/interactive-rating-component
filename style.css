@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--lightGrey: hsl(217, 12%, 63%);
+--mediumGrey: hsl(216, 12%, 54%);
+--darkBlue: hsl(213, 19%, 18%);
+--veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    font-family: 'Overpass', sans-serif;
+    /* font-size: 15px; */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+}
+.card {
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--darkBlue);
+    border-radius: 1.3em;
+}
+/* front-card active! */
+.backNote {
+    display: none;
+}
+.frontCard {
+    display: block;
+
+}
+.star-header .star {
+    background-color: var(--veryDarkBlue);
+    padding: 10px;
+    border-radius: 4em;
+    border: none; 
+}
+.frontCard h1 {
+    color: var(--White);
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.frontCard p {
+    color: var(--mediumGrey);
+    font-size: 15px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.btn {
+    padding: 10px 15px;
+    border-radius: 4em;
+    border: none;
+    font-size: 1em;
+    background-color: var(--veryDarkBlue);
+    color: var(--mediumGrey);
+}
+.btn-selected {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.active {
+    background-color: var(--lightGrey);
+    color: var(--White);
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: 0.7s ease-in-out;
+}
+.submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+/* style for the thank you section */
+.frontCard.hide-card {
+    display: none;
+}
+.backNote.show-card {
+    display: block;
+    text-align: center;
+}
+.backNote img {
+    margin: auto;
+}
+.backNote .display-id {
+    background-color: var(--veryDarkBlue);
+    color: var(--Orange);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 1.3em  4rem;
+    padding: 0.67em;
+}
+.backNote h4 {
+    color: var(--White);
+    font-size: 1.4em;
+    margin: 1em auto;
+}
+.backNote p {
+    color: var(--mediumGrey);
+    font-size: 15px;
+}
