@@ -15,7 +15,7 @@ numberButtons.forEach(button => {
         active.classList.remove("active")
     })
 })
-//Rendering selected value
+//Rendering the selected value to BackNote after submit is pressed
 submitBtn.addEventListener("click", () => {
     const btnSelected = document.querySelector(".btn-selected");
     let selectedValue = btnSelected.textContent;

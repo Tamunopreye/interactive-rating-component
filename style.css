@@ -44,7 +44,7 @@ body {
     display: block;
 
 }
-.star-header .star {
+.star {
     background-color: var(--veryDarkBlue);
     padding: 10px;
     border-radius: 4em;
